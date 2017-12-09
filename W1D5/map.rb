@@ -1,45 +1,3 @@
-class Stack
-  attr_reader :stack
-
-    def initialize
-      @stack = []
-    end
-
-    def add(el)
-      @stack << el
-    end
-
-    def remove
-      @stack.pop
-    end
-
-    def show
-      @stack.dup
-    end
-  end
-
-class Queue
-
-  attr_reader :queue
-
-  def initialize
-    @queue = []
-  end
-
-  def enqueue(el)
-    @queue << el
-    el
-  end
-
-  def dequeue
-    @queue.shift
-  end
-
-  def show
-    @queue.dup
-  end
-end
-
 class Map
 
   attr_reader :list
@@ -77,7 +35,7 @@ class Map
       if el.is_a?(Array)
         deep_dup(el)
       else
-        el 
+        el
       end
     end
   end
